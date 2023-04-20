@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Dev-Detective</title>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <div class="container">
+
+            <!-- 1st part -->
+
+            <div class="header">
+
+                <h1>DevDetective</h1>
+
+                <div id="btn-mode">
+                    <p id="mode-text">Dark</p>
+                    <div class="mode-icon"><i class="fa-solid fa-moon"></i></div>
+                    <div class="mode-icon"><i class="fa-solid fa-sun-bright"></i></div>
+                </div>
+
+
+            </div>
+
+            <!-- 2nd part -->
+
+            <div id="app">
+
+                <div class="searchbar-container active">
+                    <input type="search" name="user-input" id="input" placeholder="Enter a Github Username..." required>
+
+                    <!-- if searching error occurs -->
+
+                    <div class="error">
+
+                        <p id="no-results">No Search Result</p>
+
+                    </div>
+
+                    <!-- search button -->
+
+                    <button class="btn-search" id="submit">Search</button>
+
+
+                </div>
+
+
+                <!-- 3rd part -->
+
+
+                <div class="profile-container">
+
+                    <div class="profile-content">
+
+
+                        <!-- profile-header -->
+
+                        <div class="profile-header">
+
+                            <img src="" alt="" id="avatar" loading="lazy">
+
+                            <div class="profile-info-wrapper">
+
+                                <div class="profile-name">
+
+                                    <h2 id="name"></h2>
+                                    <a href="" id="user"></a>
+                                </div>
+
+                                <p id="date"></p>
+                            </div>
+
+                        </div>
+
+                        <!-- profile bio -->
+                        <p id="bio"></p>
+
+
+                        <!-- followers & following section -->
+
+                        <div class="profile-stats-wrapper">
+
+                            <!-- repos section -->
+
+                            <div class="profile-stat">
+
+                                <p class="stat-title">Respos</p>
+                                <p class="stat-value" id="repos"></p>
+
+                            </div>
+
+                            <!-- Followers section -->
+                            <div class="profile-stat">
+
+                                <p class="stat-title">Followers</p>
+                                <p class="stat-value" id="followers"></p>
+
+                            </div>
+
+                            <!-- Following section -->
+
+                            <div class="profile-stat">
+
+                                <p class="stat-title">Following</p>
+                                <p class="stat-value" id="following"></p>
+
+                            </div>
+
+                        </div>
+
+                        <!-- footer section -->
+
+                        <div class="profile-bottom-wrapper">
+
+                            <!-- location part -->
+
+                            <div class="profile-info">
+
+                                <div class="bottom-icons"><i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <p id="location"></p>
+
+                            </div>
+
+                            <!-- link section -->
+
+                            <div class="profile-info">
+
+                                <div class="bottom-icons"><i class="fa-solid fa-link"></i>
+                                </div>
+                                <a href="" id="page"></a>
+                            </div>
+
+
+                            <!-- Twitter section -->
+
+                            <div class="profile-info">
+
+                                <div class="bottom-icons"><i class="fa-brands fa-twitter"></i>
+                                </div>
+                                <a href="" id="twitter"></a>
+                            </div>
+
+                            <!-- company icon -->
+
+
+                            <div class="profile-info">
+
+                                <div class="bottom-icons"><i class="fa-solid fa-building"></i>
+                                </div>
+                                <p id="company"></p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://kit.fontawesome.com/d310218577.js " crossorigin="anonymous "></script>
+    <script src="/index.js"></script>
+    <!-- <img src="/images/sun.png" alt=""> -->
+
+</body>
+
+</html>
